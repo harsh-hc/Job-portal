@@ -1,0 +1,58 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ .alert {
+  font-weight: bold;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  margin-bottom: 18px;
+  padding: 12px 25px 12px 24px;
+  -moz-box-shadow: 3px 3px 1px 1px #CCCCCC;
+  -webkit-box-shadow: 3px 3px 1px 1px #CCCCCC;
+  box-shadow: 3px 3px 1px 1px #CCCCCC;
+}
+
+
+.alert-danger {
+  background-color: #ffebe9;
+  border-color: #fc7e72;
+  color: black;
+  padding-top: 20px;
+}
+
+.alert-success {
+  background-color: #dafbe1;
+  border-color: #44ab5a;
+  color: black;
+  padding-top: 20px;
+}
+
+.alert-info {
+  background-color: #ddf4ff;
+  border-color: #54aeff66;
+  color: black;
+  padding-top: 20px;
+}
+
+.alert-warning {
+  background-color: #fff8c5;
+  border-color: #cda22966;
+  color: black;
+  padding-top: 20px;
+}
+
+

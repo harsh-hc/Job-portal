@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JobHunter</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= render 'layouts/flash'%>
+    <% if user_signed_in? %>
+      <%= link_to 'Sign Out', session_path(current_user.id), data: { turbo_method: :delete} %>
+    <% end %>
+    <%= yield %>
+  </body>
+</html>
